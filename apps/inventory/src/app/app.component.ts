@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ProductsComponent } from '@angular-monorepo-tutorial/products';
+// TODO:(td) if we remove this we should remove other files also (technical depth)
+// import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [ProductsComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
