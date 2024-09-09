@@ -35,3 +35,14 @@ npx nx build angular-store
 
 npx nx run-many -t lint test build
 ```
+
+nx affected
+```
+npx nx affected -t lint test
+npx nx graph --affected
+```
+
+```
+npx nx deploy angular-store
+npx nx affected -t deploy
+```

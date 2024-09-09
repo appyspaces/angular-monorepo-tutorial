@@ -6,6 +6,10 @@
   "sourceRoot": "apps/angular-store/src",
   "tags": [],
   "targets": {
+    "deploy":{
+      "dependsOn": ["build"],
+      "command": "netlify deploy --prod --dir=dist/apps/angular-store"
+    },
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
